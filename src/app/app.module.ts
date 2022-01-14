@@ -1,9 +1,10 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ExemplosModule } from './exemplos/exemplos.module';
-import { ExerciciosModule } from './exercicios/exercicios.module';
+
 
 
 @NgModule({
@@ -12,8 +13,8 @@ import { ExerciciosModule } from './exercicios/exercicios.module';
   ],
   imports: [
     BrowserModule,
-    ExemplosModule,
-    ExerciciosModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
